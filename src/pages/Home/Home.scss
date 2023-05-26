@@ -1,0 +1,287 @@
+.container {
+    display: flex;
+    padding: 2rem 0;
+    justify-content: center;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    @media screen and (max-width: 768px) {
+        div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        padding: 0 1rem;
+        }
+    }
+
+    
+}
+
+
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 130%;
+    padding: 0 1rem;
+
+    h1 {
+        margin: 0;
+        font-family: 'Playfair';
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 3.5rem;
+        width: 100%;
+    }
+
+    p {
+        width: 100%;
+        font-family: 'Poppins';
+        font-weight: 300;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        
+    }
+
+    @media (min-width: 768px) {
+        h1 {
+            font-size: 52px;
+            line-height: 69px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 155%;
+
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.footer-container {
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 500px; 
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 1rem; 
+    position: relative;
+
+    .p-number {
+        margin: 0.8rem 0 0 0;
+        font-family: 'Poppins';
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .p-text {
+        width: 90%; 
+        margin: 0 0 1.5rem 0;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    svg {
+        position: absolute;
+        left: -1.5rem;
+        top: -1.5rem;
+        z-index: 2;
+    }
+
+    @media (min-width: 768px) {
+        .p-number {
+            font-size: 32px;
+            line-height: 48px;
+            margin: 0.8rem 0 0 1.5rem;
+        }
+
+        .p-text {
+            font-size: 18px;
+            margin: 0 0 0 1.5rem;
+        }
+    }
+}
+
+
+.right-side {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px; /* Optional: Adds some space between the rows */
+
+    @media screen and (max-width: 1280px) {
+        display: flex;
+        flex-direction: column;
+        max-width: 150px;
+        max-height: 200px;
+    }
+}
+
+.first-container {
+    grid-row: 1;
+    position: relative;
+    width: 100%;
+
+    
+    
+
+    div {
+    background-color: #D9D9D9;
+    position: absolute;
+    width: 90%;
+    height: 60px;
+    bottom: 2.84%;
+    left: 5%;
+    border-radius: 5px;
+
+    @media screen and (max-width: 768px) {
+        width: 70%;
+        left: 10%;
+    }
+
+    p {
+        position: absolute;
+        margin: 0 0 0 1rem;
+        padding: 0;
+        text-align: start;
+        
+    }
+    p:first-child {
+        font-weight: 700;
+        font-size: 19px;
+        top: 10%;
+        @media screen and (min-width: 768px) and (max-width: 1280px) {
+            font-size: 10px;
+        }
+    }
+    p:nth-child(2) {
+        top: 45%;
+        font-size: 17px;
+        @media screen and (min-width: 768px) and (max-width: 1280px) {
+            font-size: 10px;
+        }
+    }
+    p:nth-child(3) {
+        top: 17%;
+        right: 10%;
+        font-size: 23px;
+        font-weight: 700;
+        @media screen and (min-width: 768px) and (max-width: 1280px) {
+            top: 25%;
+            font-size: 10px;
+        }
+    }
+    
+    }
+}
+
+.second-row {
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+
+    div {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            background-color: #D9D9D9;
+            position: absolute;
+            width: 90%;
+            height: 53px;
+            bottom: 2.84%;
+            left: 5%;
+            border-radius: 5px;
+
+            @media screen and (max-width: 768px) {
+                width: 70%;
+                left: 10%;
+            }
+
+            p {
+                position: absolute;
+                margin: 0 0 0 1rem;
+                padding: 0;
+                text-align: start;
+                
+            }
+            p:first-child {
+                font-weight: 700;
+                font-size: 15px;
+                top: 10%;
+                @media screen and (min-width: 768px) and (max-width: 1280px) {
+                    font-size: 10px;
+                }
+            }
+            p:nth-child(2) {
+                top: 40%;
+                @media screen and (min-width: 768px) and (max-width: 1280px) {
+                    font-size: 10px;
+                }
+            }
+            p:nth-child(3) {
+                top: 20%;
+                right: 10%;
+                font-size: 20px;
+                font-weight: 700;
+                @media screen and (min-width: 768px) and (max-width: 1280px) {
+                    top: 25%;
+                    font-size: 10px;
+                }
+            }
+
+        }
+    }
+
+
+    .second-container {
+        margin: 0 0 1rem 0;
+    }
+}
+
+.first-container img, .second-container img, .third-container img {
+    width: 100%; /* This makes the image responsive */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+
+.first-container:hover img, 
+.second-container:hover img, 
+.third-container:hover img {
+    transform: scale(1.1); /* Mărește imaginea cu 10% atunci când mouse-ul este deasupra */
+}

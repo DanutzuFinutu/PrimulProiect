@@ -1,0 +1,24 @@
+svg{
+    width: 205px;
+    @media screen and (max-width: 1538px) {
+        width: 230px;
+    }
+
+    @media screen and (max-width: 1526px) {
+        width: 255px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        width: 205px;
+    }
+
+    @media screen and (max-width: 976px) {
+        width: 230px;
+    }
+    @media screen and (max-width: 971px) {
+        width: 260px;
+    }
+    @media screen and (max-width: 768px) {
+        width: 240px;
+    }
+}

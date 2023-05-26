@@ -1,0 +1,39 @@
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px;
+    gap: 10px;
+    border: transparent;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .button-browse {
+    width: 249px;
+    height: 48px;
+    background: #EDDECD;
+    border-radius: 8px;
+  }
+  
+  .button-spring {
+    padding: 0px;
+    width: 246px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+    
+    hr {
+      box-sizing: border-box;
+      width: 29px;
+      height: 0px;
+      border: 1px solid #000000;
+    }
+  }
+  
+  .button-spring:hover {
+    transform: scale(1.1);
+  }
